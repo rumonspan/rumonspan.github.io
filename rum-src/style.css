@@ -318,6 +318,9 @@
 		.container {
 			width:90%;
 		}
+		#article{
+			width: 95%;
+		}
 		header h1{
 			font-size: 30px;
 		}

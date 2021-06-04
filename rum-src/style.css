@@ -85,6 +85,7 @@ table {
 	}
 	body{
 		min-height: 100%;
+		width: 100%;
 		margin:auto;
 		background-color: #fbeec1;
 		font: 16px/25px rubik, arial, sans serif;
@@ -363,7 +364,7 @@ table {
 	}
 	@media screen and (max-width: 800px) {
 		.container {
-			width:90%;
+			width:100%;
 		}
 		#article{
 			width: 95%;

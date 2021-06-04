@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Statistik Rum Onspan Music</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="rum-src/style.css">
+	<script src="rum-src/stats.js"></script>
+    <script src="rum-src/videos.js"></script>
+	<script src="rum-src/footer.js"></script>
+	<script src="rum-src/header.js"></script>
+	<noscript><p><strong><i>Please enable JavaScript to view this page properly</i>.</p></strong></p></noscript>
+</head>
+<body>
+<header><script type="text/javascript">headerScript(1)</script></header>
+<div class="container">
+    <div id="article">
+        <div class="newest">
+            <h1 class="post-title">Video terbaru</h1>
+            <div class="videoContainerYt">
+                <script type="text/javascript">
+                var n = videoCounts();
+                var code = videoCode(n);
+                document.write(embedding(code));
+            </script>
+            </div>
+            <div class="judulAsli"><h2><script type="text/javascript">
+            var g = videoCounts();
+            document.write("<a href ='rum-vids/"+videoLinks(g)+".html'>")
+            document.write(videoTitle(videoCounts())+"</a>");</script></h2></div>
+        </div>
+        <div class="progress">
+            <h1 class="jarakin">Penambahan hari ini: <script type="text/javascript">document.write(tanggalan(1)+", "+tanggalan(2)+" "+tanggalan(3)+" "+tanggalan(4))</script></h1>
+            <div class="containerPertambahan">
+                <script type="text/javascript">
+                    update_View_Index();	
+                </script>
+            </div>
+        </div>
+        <h1>Tabel jumlah <i>views</i></h1>
+        <script type="text/javascript">
+            var currentYear = new Date().getFullYear();
+            var currentMonth = (new Date().getMonth())+1;
+            tableBuilder(1, currentMonth, currentYear, 1);
+        </script>
+        <h6 class="stats-lengkap"><a href="rum-view.html">Lihat Statistik lengkap</a></h6>
+        <h2>Keterangan</h2>
+        <div class="tableWrapper2">
+            <table id="keterangan">
+                <tr>
+                    <td>Catatan</td>
+                    <td class="titikDua">:</td>
+                    <td>Data views terbaru selalu diambil setiap pagi pukul 06.00 - 08.00 WIB.</td>
+                </tr>
+            </table>
+            <table id="keterangan">
+                <tr>
+                    <td id="entrance" class="warnaKeterangan"></td>
+                    <td class="titikDua">:</td>
+                    <td>Menandakan hari ketika video itu di-<i>upload</i>.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+    
+<footer>
+	<script type="text/javascript">
+		footerScript(1);
+	</script>
+</footer>
+</body>
+</html>

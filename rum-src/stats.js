@@ -102,7 +102,8 @@ function daysTotal(mauApa, month, year){
 		var viewsJune= [/*1*/1355,
 		                /*2*/1376,
 		                /*3*/1392,
-		                /*4*/1408];
+		                /*4*/1408,
+                                /*5*/1424];
 		if (month == 0){return viewsMay.length;}
 		else if (month == 5 && mauApa == 1){return viewsMay[date-1];}
 		else if(month == 5 && mauApa == 3){
@@ -149,7 +150,8 @@ function daysTotal(mauApa, month, year){
 		var viewsJune= [/*1*/2375,
 		                /*2*/2396,
 		                /*3*/2419,
-		                /*4*/2438];
+		                /*4*/2438,
+                                /*5*/2456];
 		if (month == 0){return viewsMay.length;}
 		else if (month == 5 && mauApa == 1){return viewsMay[date-1];}
 		else if(month == 5 && mauApa == 3){
@@ -196,7 +198,8 @@ function daysTotal(mauApa, month, year){
 		var viewsJune= [/*1*/1091,
 		                /*2*/1113,
 		                /*3*/1137,
-		                /*4*/1160];
+		                /*4*/1160,
+                                /*5*/1178];
 		if (month == 0){return viewsMay.length;}
 		else if (month == 5 && mauApa == 1){return viewsMay[date-1];}
 		else if(month == 5 && mauApa == 3){

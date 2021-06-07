@@ -104,7 +104,8 @@ function daysTotal(mauApa, month, year){
 		                /*3*/1392,
 		                /*4*/1408,
                                 /*5*/1424,
-			       /*6*/1443];
+			       /*6*/1443,
+			       /*7*/1458];
 		if (month == 0){return viewsMay.length;}
 		else if (month == 5 && mauApa == 1){return viewsMay[date-1];}
 		else if(month == 5 && mauApa == 3){
@@ -153,7 +154,8 @@ function daysTotal(mauApa, month, year){
 		                /*3*/2419,
 		                /*4*/2438,
                                 /*5*/2456,
-			   	/*6*/2480];
+			   	/*6*/2480,
+			       /*7*/2494];
 		if (month == 0){return viewsMay.length;}
 		else if (month == 5 && mauApa == 1){return viewsMay[date-1];}
 		else if(month == 5 && mauApa == 3){
@@ -202,7 +204,8 @@ function daysTotal(mauApa, month, year){
 		                /*3*/1137,
 		                /*4*/1160,
                                 /*5*/1178,
-			       /*6*/1194];
+			       /*6*/1194,
+			       /*7*/1207];
 		if (month == 0){return viewsMay.length;}
 		else if (month == 5 && mauApa == 1){return viewsMay[date-1];}
 		else if(month == 5 && mauApa == 3){

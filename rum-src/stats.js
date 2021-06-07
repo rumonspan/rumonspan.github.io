@@ -106,6 +106,7 @@ function daysTotal(mauApa, month, year){
                                 /*5*/1424,
 			       /*6*/1443,
 			       /*7*/1458];
+		var viewsJuly = [];
 		if (month == 0){return viewsMay.length;}
 		else if (month == 5 && mauApa == 1){return viewsMay[date-1];}
 		else if(month == 5 && mauApa == 3){
@@ -113,9 +114,13 @@ function daysTotal(mauApa, month, year){
 		else if(month == 5 && mauApa == 2){return viewsMay[(viewsMay.length)-1];}
 		else if(month == 5 && mauApa == 4){return viewsMay[date-1];}
 		else if (month == 6 && mauApa == 1){return viewsJune[date-1];}
-		else if(month == 6 && mauApa == 3){return viewsJune[(viewsJune.length)-2];}
 		else if(month == 6 && mauApa == 2){return viewsJune[(viewsJune.length)-1];}
+		else if(month == 6 && mauApa == 3){return viewsJune[(viewsJune.length)-2];}
 		else if(month == 6 && mauApa == 4){return viewsJune[date-1];}
+		else if (month == 7 && mauApa == 1){return viewsJuly[date-1];}
+		else if(month == 7 && mauApa == 2){return viewsJuly[(viewsJune.length)-1];}
+		else if(month == 7 && mauApa == 3){return viewsJuly[(viewsJune.length)-2];}
+		else if(month == 7 && mauApa == 4){return viewsJuly[date-1];}
 	}
 	function solamente(date,month,mauApa){
 		var viewsMay = [/*1*/2073,
@@ -156,6 +161,7 @@ function daysTotal(mauApa, month, year){
                                 /*5*/2456,
 			   	/*6*/2480,
 			       /*7*/2494];
+		var viewsJuly = [];
 		if (month == 0){return viewsMay.length;}
 		else if (month == 5 && mauApa == 1){return viewsMay[date-1];}
 		else if(month == 5 && mauApa == 3){
@@ -163,9 +169,13 @@ function daysTotal(mauApa, month, year){
 		else if(month == 5 && mauApa == 2){return viewsMay[(viewsMay.length)-1];}
 		else if(month == 5 && mauApa == 4){return viewsMay[date-1];}
 		else if (month == 6 && mauApa == 1){return viewsJune[date-1];}
-		else if(month == 6 && mauApa == 3){return viewsJune[(viewsJune.length)-2];}
 		else if(month == 6 && mauApa == 2){return viewsJune[(viewsJune.length)-1];}
+		else if(month == 6 && mauApa == 3){return viewsJune[(viewsJune.length)-2];}
 		else if(month == 6 && mauApa == 4){return viewsJune[date-1];}
+		else if (month == 7 && mauApa == 1){return viewsJuly[date-1];}
+		else if(month == 7 && mauApa == 2){return viewsJuly[(viewsJune.length)-1];}
+		else if(month == 7 && mauApa == 3){return viewsJuly[(viewsJune.length)-2];}
+		else if(month == 7 && mauApa == 4){return viewsJuly[date-1];}
 	}
 	function soloGitar(date,month,mauApa){
 		var viewsMay = [/*1*/799,
@@ -206,6 +216,7 @@ function daysTotal(mauApa, month, year){
                                 /*5*/1178,
 			       /*6*/1194,
 			       /*7*/1207];
+		var viewsJuly = [];
 		if (month == 0){return viewsMay.length;}
 		else if (month == 5 && mauApa == 1){return viewsMay[date-1];}
 		else if(month == 5 && mauApa == 3){
@@ -213,9 +224,13 @@ function daysTotal(mauApa, month, year){
 		else if(month == 5 && mauApa == 2){return viewsMay[(viewsMay.length)-1];}
 		else if(month == 5 && mauApa == 4){return viewsMay[date-1];}
 		else if (month == 6 && mauApa == 1){return viewsJune[date-1];}
-		else if(month == 6 && mauApa == 3){return viewsJune[(viewsJune.length)-2];}
 		else if(month == 6 && mauApa == 2){return viewsJune[(viewsJune.length)-1];}
+		else if(month == 6 && mauApa == 3){return viewsJune[(viewsJune.length)-2];}
 		else if(month == 6 && mauApa == 4){return viewsJune[date-1];}
+		else if (month == 7 && mauApa == 1){return viewsJuly[date-1];}
+		else if(month == 7 && mauApa == 2){return viewsJuly[(viewsJune.length)-1];}
+		else if(month == 7 && mauApa == 3){return viewsJuly[(viewsJune.length)-2];}
+		else if(month == 7 && mauApa == 4){return viewsJuly[date-1];}
 	}
 
 	function tableBuilder(date, month, year, videonum){

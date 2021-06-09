@@ -53,7 +53,6 @@ function daysTotal(mauApa, month, year){
 	if(mauApa == 1){return leap;}
 	else if (mauApa == 2){return daysInMonth;}
 }
-
 function videoAge(diffYears, videonum){
 	var diffMonth;
 	var uploadYear = new Date(tanggalUpload(videonum));
@@ -74,9 +73,7 @@ function videoAge(diffYears, videonum){
 			} else if (diffMonth == 0){
 				document.write(" ("+diffYears+" tahun)"); 
 			}
-			
 		}
-			
 	} else if (diffYears < 1){
 		diffMonth = diffYears*12;
 		if (diffMonth%daysInMonth==0){
@@ -92,9 +89,7 @@ function videoAge(diffYears, videonum){
 			} else if (diffMonth == 1 ||(diffDays == NaN || diffDays== undefined)){
 				document.write(" ("+diffMonth+" bulan");
 			}
-			
 		}
-		
 	}
 }
 function getTodayDate(mauApa){

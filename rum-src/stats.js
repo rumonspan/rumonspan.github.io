@@ -66,7 +66,7 @@ function videoSelector (videonum, date, month, year, formatted,mauApa){
 }
 function felizNavidad(date, month,year,mauApa){
 	var viewsMay = [1164,1169,1174,1180,1183,1187,1194,1199,1205,1209,1213,1217,1222,1228,1237,1241,1248,1254,1257,1265,1269,1274,1279, 1287, 1293, 1298,1308,1313,1321,1329,1337];
-	var viewsJune= [1355,1376,1392,1408,1424,1443,1458,1468,1474];
+	var viewsJune= [1355,1376,1392,1408,1424,1443,1458,1468,1474,1481];
 	var viewsJuly = [];
 	var viewsAugust = [];
 	if (year == 2021){
@@ -91,7 +91,7 @@ function felizNavidad(date, month,year,mauApa){
 }
 function solamente(date,month,year,mauApa){
 	var viewsMay = [2073,2078,2087,2097,2108,2125,2135,2139,2147,2156,2160,2165,2169,2176,2187,2193,2201,2208,2215,2230,2244,2252,2262,2271,2283,2294,2309,2314,2327,2336,2345];
-	var viewsJune= [2375,2396,2419,2438,2456,2480,2495,2504,2511];
+	var viewsJune= [2375,2396,2419,2438,2456,2480,2495,2504,2511,2517];
 	var viewsJuly = [];
 	var viewsAugust = [];
 	if (year == 2021){
@@ -116,7 +116,7 @@ function solamente(date,month,year,mauApa){
 }
 function soloGitar(date,month,year,mauApa){
 	var viewsMay = [799,805,815,822,829,837,848,852,858,863,867,873,880,889,899,908,916,927,937,951,963,970,984,993,1002,1013,1031,1037,1050,1062,1071];
-	var viewsJune= [1091,1113,1137,1160,1178,1194,1207,1215,1221];
+	var viewsJune= [1091,1113,1137,1160,1178,1194,1207,1215,1221,1227];
 	var viewsJuly = [];
 	var viewsAugust = [];
 	if (year == 2021){

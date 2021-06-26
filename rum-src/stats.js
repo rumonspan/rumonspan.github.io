@@ -1,29 +1,27 @@
-function daysTotal(mauApa, month, year){
+function daysTotal(mauApa,month,year){
 	var leap, daysInMonth;
-	if (year%4 != 0){leap = false;}
-	else if ((year%100 == 0) && (year%400 != 0)){leap = false;}
-	else {leap = true;}
-	if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12){
-		daysInMonth = 31;
-	} else if (month == 4 || month == 6 || month == 9 || month == 11){
-		daysInMonth = 30;}
-	else if ((month == 2) && (leap == true)){daysInMonth = 29;}
-	else if ((month == 2) && (leap == false)){daysInMonth = 28;}
-	if(mauApa == 1){return leap;}
-	else if (mauApa == 2){return daysInMonth;}
+	if(year%4!=0){leap=false;}
+	else if((year%100==0)&&(year%400!=0)){leap=false;}
+	else{leap=true;}
+	if(month==1||month==3||month==5||month==7||month==8||month==10||month==12){daysInMonth=31;}
+	else if(month==4||month==6||month==9||month==11){daysInMonth=30;}
+	else if((month==2)&&(leap==true)){daysInMonth=29;}
+	else if((month==2)&&(leap==false)){daysInMonth=28;}
+	if(mauApa==1){return leap;}
+	else if(mauApa==2){return daysInMonth;}
 }
-function tH(column, month, year){
+function tH(column,month,year){
 	var header = ["Video&darr;","Tanggal&rarr;"];
-	var leap = daysTotal(1,month,year);
-	var daysInMonth = daysTotal(2,month,year)+1;
-	for (var i = 1; i < daysInMonth; i++){header.push(i+"/"+month);}
-	if (column == 0){return header.length;}
-	else {return header[column-1];}
+	var leap=daysTotal(1,month,year);
+	var daysInMonth=daysTotal(2,month,year)+1;
+	for (var i=1;i<daysInMonth;i++){header.push(i+"/"+month);}
+	if(column==0){return header.length;}
+	else{return header[column-1];}
 }
 function videoTitles(videonum){
 	var videos = [/*1*/"Feliz Navidad",
-				/*2*/"Solamente",
-				/*3*/"Solo Gitar"];
+		/*2*/"Solamente",
+		/*3*/"Solo Gitar"];
 	if (videonum == 0){return videos.length;}
 	else {return videos[videonum-1];}
 }
@@ -32,11 +30,11 @@ function videoLinks(videonum){
 	return links[videonum-1];
 }
 function monthSelector(month){
-	var months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
-	if (month == 0){return months.length;}
-	else {return months[month-1];}
+	var months=["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+	if(month==0){return months.length;}
+	else{return months[month-1];}
 }
-function videoSelector (videonum, date, month, year, formatted,mauApa){
+function videoSelector (videonum,date,month,year,formatted,mauApa){
 	var views;
 	if (videonum == 1){
 		views = felizNavidad(date,month,year,mauApa);
@@ -61,9 +59,9 @@ function videoSelector (videonum, date, month, year, formatted,mauApa){
 		}
 	}
 }
-function felizNavidad(date, month,year,mauApa){
-	var viewsMay = [1164,1169,1174,1180,1183,1187,1194,1199,1205,1209,1213,1217,1222,1228,1237,1241,1248,1254,1257,1265,1269,1274,1279, 1287, 1293, 1298,1308,1313,1321,1329,1337];
-	var viewsJune= [1355,1376,1392,1408,1424,1443,1458,1468,1474,1481,1488,1496,1503,1509,1516,1522,1540,1559,1572,1583,1600,1636,1662,1680];
+function felizNavidad(date,month,year,mauApa){
+	var viewsMay = [1164,1169,1174,1180,1183,1187,1194,1199,1205,1209,1213,1217,1222,1228,1237,1241,1248,1254,1257,1265,1269,1274,1279, 1287,1293, 1298,1308,1313,1321,1329,1337];
+	var viewsJune= [1355,1376,1392,1408,1424,1443,1458,1468,1474,1481,1488,1496,1503,1509,1516,1522,1540,1559,1572,1583,1600,1636,1662,1680,1697,1712];
 	var viewsJuly = [];
 	var viewsAugust = [];
 	if (year == 2021){
@@ -88,7 +86,7 @@ function felizNavidad(date, month,year,mauApa){
 }
 function solamente(date,month,year,mauApa){
 	var viewsMay = [2073,2078,2087,2097,2108,2125,2135,2139,2147,2156,2160,2165,2169,2176,2187,2193,2201,2208,2215,2230,2244,2252,2262,2271,2283,2294,2309,2314,2327,2336,2345];
-	var viewsJune= [2375,2396,2419,2438,2456,2480,2495,2504,2511,2517,2524,2532,2539,2546,2553,2558,2583,2600,2617,2634,2661,2717,2748,2778];
+	var viewsJune= [2375,2396,2419,2438,2456,2480,2495,2504,2511,2517,2524,2532,2539,2546,2553,2558,2583,2600,2617,2634,2661,2717,2748,2778,2792,2813];
 	var viewsJuly = [];
 	var viewsAugust = [];
 	if (year == 2021){
@@ -113,7 +111,7 @@ function solamente(date,month,year,mauApa){
 }
 function soloGitar(date,month,year,mauApa){
 	var viewsMay = [799,805,815,822,829,837,848,852,858,863,867,873,880,889,899,908,916,927,937,951,963,970,984,993,1002,1013,1031,1037,1050,1062,1071];
-	var viewsJune= [1091,1113,1137,1160,1178,1194,1207,1215,1221,1227,1234,1243,1252,1259,1264,1270,1286,1305,1325,1335,1358,1388,1412,1443];
+	var viewsJune= [1091,1113,1137,1160,1178,1194,1207,1215,1221,1227,1234,1243,1252,1259,1264,1270,1286,1305,1325,1335,1358,1388,1412,1443,1463,1482];
 	var viewsJuly = [];
 	var viewsAugust = [];
 	if (year == 2021){

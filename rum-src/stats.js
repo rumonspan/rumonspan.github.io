@@ -26,11 +26,11 @@ function videoTitles(videonum){
 	else{return videos[videonum-1];}
 }
 function videoLinks(videonum){
-	var links=["rum-vids/feliz-navidad.html", "rum-vids/solamente-una-vez.html", "rum-vids/solo-gitar.html"];
+	var links=["rum-vids/feliz-navidad.html","rum-vids/solamente-una-vez.html","rum-vids/solo-gitar.html"];
 	return links[videonum-1];
 }
 function monthSelector(month){
-	var months=["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+	var months=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
 	if(month==0){return months.length;}
 	else{return months[month-1];}
 }
